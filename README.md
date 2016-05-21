@@ -1,7 +1,7 @@
 # DocDev
 Documentation for Development
 
-Let's maintain a TOC here
+Let's maintain a TOC here!
 
 1. Chapter .
     - [Section a](foldera/README.md)
