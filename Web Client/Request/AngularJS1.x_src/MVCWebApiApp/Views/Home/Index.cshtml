@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>$http Simple Type</h2>
+<pre>{{vm | json}}</pre>
+<div class="row">
+    <div class="col-md-2">
+        <button id="GetAllRequest" class="btn btn-primary" ng-click="vm.getAllRequest()"> Get All test </button>
+    </div>
+
+    <div class="col-md-2">
+        <button id="GetAllRequest" class="btn btn-primary" ng-click="vm.getIdRequest()"> Get Id test </button>
+    </div>
+
+    <div class="col-md-2">
+        <button id="GetAllRequest" class="btn btn-primary" ng-click="vm.postRequest()"> Post test </button>
+    </div>
+
+    <div class="col-md-2">
+        <button id="GetAllRequest" class="btn btn-primary" ng-click="vm.putRequest()">Put Id test </button>
+    </div>
+
+    <div class="col-md-2">
+        <button id="GetAllRequest" class="btn btn-primary" ng-click="vm.deleteRequest()"> Delete Id test </button>
+    </div>
+</div>
+
+<h2>$http Complex Type</h2>
+<div class="row">
+    <div class="col-md-2">
+        <button id="GetAllRequest" class="btn btn-primary" ng-click="vm.getComplexAllRequest()"> Get All test </button>
+    </div>
+
+    <div class="col-md-2">
+        <button id="GetAllRequest" class="btn btn-primary" ng-click="vm.getComplexIdRequest()"> Get Id test </button>
+    </div>
+
+    <div class="col-md-2">
+        <button id="GetAllRequest" class="btn btn-primary" ng-click="vm.postComplexRequest()"> Post test </button>
+    </div>
+
+    <div class="col-md-2">
+        <button id="GetAllRequest" class="btn btn-primary" ng-click="vm.putComplexRequest()">Put Id test </button>
+    </div>
+
+    <div class="col-md-2">
+        <button id="GetAllRequest" class="btn btn-primary" ng-click="vm.deleteComplexRequest()"> Delete Id test </button>
+    </div>
+</div>
+
+
+<h2>$resource REST Complex Type</h2>
+<div class="row">
+    <div class="col-md-2">
+        <button id="GetAllRequest" class="btn btn-primary" ng-click="vm.getRESTComplexAllRequest()"> Get All test </button>
+    </div>
+
+    <div class="col-md-2">
+        <button id="GetAllRequest" class="btn btn-primary" ng-click="vm.getRESTComplexIdRequest()"> Get Id test </button>
+    </div>
+
+    <div class="col-md-2">
+        <button id="GetAllRequest" class="btn btn-primary" ng-click="vm.postRESTComplexRequest()"> Post test </button>
+    </div>
+
+    <div class="col-md-2">
+        <button id="GetAllRequest" class="btn btn-primary" ng-click="vm.putRESTComplexRequest()">Put Id test </button>
+    </div>
+
+    <div class="col-md-2">
+        <button id="GetAllRequest" class="btn btn-primary" ng-click="vm.deleteRESTComplexRequest()"> Delete Id test </button>
+    </div>
+</div>
+
+
+
+@*Include this AFTER angularjs
+<script src="~/Scripts/app.js"></script>*@

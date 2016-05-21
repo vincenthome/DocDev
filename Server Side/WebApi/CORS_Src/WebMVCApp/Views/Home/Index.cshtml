@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-sm-4">
+        <select id="method" class="form-control">
+            <option value="get">GET</option>
+            <option value="post">POST</option>
+            <option value="put">PUT</option>
+        </select>
+    </div>
+    <div class="col-sm-2">
+        <input type="button" class="btn btn-primary" value="Try it" onclick="sendRequest()" />
+    </div>
+    <div class="col-sm-6">
+        <span id='value1'>(Result)</span>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+
+    function sendRequest() {
+
+        var method = $('#method').val();
+        var serviceUrl = 'http://localhost:49330/api/values/';
+
+        if (method === "put")
+            serviceUrl += "42"
+
+        $.ajax({
+            url: serviceUrl,
+            type: method,
+            dataType: "json", // aka Accept
+            contentType: "application/json",
+            data: "\"myData\"",
+        })
+        .done(function (data, textStatus, jqXHR) {
+            $('#value1').html(data);
+        })
+        .fail(function (jqXHR, textStatus, errorThrown) {
+            $('#value1').html(jqXHR.responseText || textStatus);
+        });
+
+
+    }
+    </script>
+}
