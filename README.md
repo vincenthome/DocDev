@@ -26,7 +26,10 @@
     - Tools
     - WebApi
 1. Tools
-
+    - Git
+    - Package Managers
+    - Task Runners
+    - Visual Studio Snippets
 1. Web Client
     - Bootstrap
     - Html5 & CSS
