@@ -345,6 +345,8 @@ You can use a link with the href attribute, or a button with the data-target att
 ##Modal - 
 [http://getbootstrap.com/javascript/#modals](http://getbootstrap.com/javascript/#modals)
 
+* Put an Id on Save Changes button and handle the .on('click' event.
+
 * Trigger: data-toggle="modal" data-target="#someId"
 * Modal Dialog: .modal .modal-dialog .modal-content .modal-header .modal-title .modal-body .modal-footer
 * Dismiss Close 'x' Button: .close data-dismiss="modal"
