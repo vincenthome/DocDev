@@ -334,7 +334,10 @@ You can use a link with the href attribute, or a button with the data-target att
   $('#myButton').on('click', function () {
     var $btn = $(this).button('loading')
     // business logic...
-    $btn.button('reset')
+    setTimeout(function () {
+        $btn.button('reset');
+    }, 3000);
+    
   })
 </script>
 ```
