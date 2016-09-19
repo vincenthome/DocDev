@@ -20,8 +20,9 @@ static async Task GetAllRequestAsync()
         HttpResponseMessage response = await client.GetAsync("api/values");
         if (response.IsSuccessStatusCode)
         {
-            List<string> body = await response.Content.ReadAsAsync<List<string>>();
-            Console.WriteLine(body.Aggregate((c,n) => c + ", " + n));
+            List<string> body = await response.Content.ReadAsStringAsync();
+            var result = JsonConvert.DeserializeObject<List<string>>(body);
+            Console.WriteLine(body);
         }
     }
 }
@@ -37,7 +38,7 @@ static async Task GetIdRequestAsync()
         HttpResponseMessage response = await client.GetAsync("api/values/42");
         if (response.IsSuccessStatusCode)
         {
-            string body = await response.Content.ReadAsAsync<string>();
+            string body = await response.Content.ReadAsStringAsync();
             Console.WriteLine(body);
         }
     }
@@ -54,7 +55,7 @@ static async Task PostRequestAsync()
         HttpResponseMessage response = await client.PostAsJsonAsync<string>("api/values","postme please");
         if (response.IsSuccessStatusCode)
         {
-            string body = await response.Content.ReadAsAsync<string>();
+            string body = await response.Content.ReadAsStringAsync();
             Console.WriteLine(body);
         }
     }
@@ -71,7 +72,7 @@ static async Task PutRequestAsync()
         HttpResponseMessage response = await client.PutAsJsonAsync<string>("api/values/42", "putme please");
         if (response.IsSuccessStatusCode)
         {
-            string body = await response.Content.ReadAsAsync<string>();
+            string body = await response.Content.ReadAsStringAsync();
             Console.WriteLine(body);
         }
     }
@@ -88,7 +89,7 @@ static async Task DeleteRequestAsync()
         HttpResponseMessage response = await client.DeleteAsync("api/values/42");
         if (response.IsSuccessStatusCode)
         {
-            string body = await response.Content.ReadAsAsync<string>();
+            string body = await response.Content.ReadAsStringAsync();
             Console.WriteLine(body);
         }
     }
