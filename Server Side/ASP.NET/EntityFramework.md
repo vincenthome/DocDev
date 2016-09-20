@@ -1,6 +1,7 @@
 # EntityFramework
 
 ##Get Start
+* [Docx](https://1drv.ms/w/s!Ag7PNrP__jM5jCQh-c891i7GcAUg)
 * [Basics](http://www.entityframeworktutorial.net/EntityFramework5/entity-framework5-introduction.aspx)
 * [Code First](http://www.entityframeworktutorial.net/code-first/entity-framework-code-first.aspx)
 * [Code First Migration](http://1drv.ms/25Q2hQg)
