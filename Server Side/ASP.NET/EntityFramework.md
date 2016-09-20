@@ -2,10 +2,7 @@
 
 ##Get Start
 * [Docx](https://1drv.ms/w/s!Ag7PNrP__jM5jCQh-c891i7GcAUg)
-* [Basics](http://www.entityframeworktutorial.net/EntityFramework5/entity-framework5-introduction.aspx)
-* [Code First](http://www.entityframeworktutorial.net/code-first/entity-framework-code-first.aspx)
 * [Code First Migration](http://1drv.ms/25Q2hQg)
-* [EF 6](http://www.entityframeworktutorial.net/entityframework6/introduction.aspx)
 * [Getting Started with Entity Framework 6 Code First using MVC 5](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)
 
 
