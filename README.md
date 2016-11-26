@@ -30,6 +30,7 @@
     - Package Managers
     - Task Runners
     - Visual Studio Snippets
+    - AutoHotkey
 1. Web Client
     - Bootstrap
     - Html5 & CSS
