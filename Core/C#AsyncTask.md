@@ -55,6 +55,11 @@ task.Wait(); // Blocks until task is complete
 // This will not use thread-pool
 Task task = Task.Factory.StartNew (() => ..., TaskCreationOptions.LongRunning);
 ```
+
+####Difference between Task.Run and Task.Factory.StartNew
+[http://blogs.microsoft.co.il/bnaya/2017/01/24/task-run-vs-task-factory-startnew-part-1](http://blogs.microsoft.co.il/bnaya/2017/01/24/task-run-vs-task-factory-startnew-part-1)
+
+
 ####TaskCompletionSource
 
 ```csharp
