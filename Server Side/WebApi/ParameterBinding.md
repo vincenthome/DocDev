@@ -1,7 +1,6 @@
 # WebApi.ParameterBinding
 
-Looks like [FromUri], [FromBody] are not useful anymore with the latest version of WebAPI. 
-The binding happens automatically in most cases.
+Simple type default to Url, Complex Type default to Body.
 
 Using multiple parameters [FromUri], [FromBody] and HttpRequestMessage from parameter or base class property
 
